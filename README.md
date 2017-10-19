@@ -2,28 +2,28 @@
 IO.java WAS PROVIDED BY THE PROFESSOR.
 
 
-Consider the following EBNF defining 16 token categories ⟨id⟩ through ⟨comma⟩: 
+Consider the following EBNF defining 16 token categories ⟨id⟩ through ⟨comma⟩:   
 
-⟨letter⟩ → a | b | ... | z | A | B | ... | Z 
-⟨digit⟩ → 0 | 1 | ... | 9 
-⟨basic id⟩ → ⟨letter⟩ {⟨letter⟩ | ⟨digit⟩} 
-⟨letters and digits⟩ → {⟨letter⟩ | ⟨digit⟩}+ 
-⟨id⟩ → ⟨basic id⟩ { "_" ⟨letters and digits⟩ }    // Note: "_" is the underscore char 
-⟨int⟩ → [+|−] {⟨digit⟩}+ 
-⟨float⟩ → [+|−] ( {⟨digit⟩}+ "." {⟨digit⟩}  |  "." {⟨digit⟩}+ ) 
-⟨floatE⟩ → (⟨float⟩ | ⟨int⟩) (e|E) [+|−] {⟨digit⟩}+ 
-⟨add⟩ → + 
-⟨sub⟩ → − 
-⟨mul⟩ → * 
-⟨div⟩ → / 
-⟨lt⟩ → "<" 
-⟨le⟩ → "<=" 
-⟨gt⟩ → ">" 
-⟨ge⟩ → ">=" 
-⟨eq⟩ → "=" 
-⟨LParen⟩ → "(" 
-⟨RParen⟩ → ")" 
-⟨comma⟩ → "," 
+⟨letter⟩ → a | b | ... | z | A | B | ... | Z   
+⟨digit⟩ → 0 | 1 | ... | 9   
+⟨basic id⟩ → ⟨letter⟩ {⟨letter⟩ | ⟨digit⟩}   
+⟨letters and digits⟩ → {⟨letter⟩ | ⟨digit⟩}+   
+⟨id⟩ → ⟨basic id⟩ { "_" ⟨letters and digits⟩ }    // Note: "_" is the underscore char   
+⟨int⟩ → [+|−] {⟨digit⟩}+   
+⟨float⟩ → [+|−] ( {⟨digit⟩}+ "." {⟨digit⟩}  |  "." {⟨digit⟩}+ )   
+⟨floatE⟩ → (⟨float⟩ | ⟨int⟩) (e|E) [+|−] {⟨digit⟩}+   
+⟨add⟩ → +   
+⟨sub⟩ → −   
+⟨mul⟩ → *   
+⟨div⟩ → /   
+⟨lt⟩ → "<"   
+⟨le⟩ → "<="   
+⟨gt⟩ → ">"   
+⟨ge⟩ → ">="   
+⟨eq⟩ → "="   
+⟨LParen⟩ → "("   
+⟨RParen⟩ → ")"   
+⟨comma⟩ → ","   
 
 ⟨letter⟩, ⟨digit⟩, ⟨basic id⟩, ⟨letters and digits⟩ are not token categories by themselves; rather, they are auxiliary categories to assist the definitions of the tokens ⟨id⟩, ⟨int⟩, ⟨float⟩, ⟨floatE⟩. 
 
