@@ -52,14 +52,9 @@ public class Project1 extends IO {
 
 			i = driver(); // extract the next token
 			if (i == 1)
-				displayln(t + "   : " + state.toString()); // outputs to the
-															// file the current
-															// token.
+				displayln(t + "   : " + state.toString()); // outputs to the file the current token.
 			else if (i == 0)
-				displayln(t + " : Lexical Error, invalid token"); // outputs if
-																	// the token
-																	// is
-																	// invalid.
+				displayln(t + " : Lexical Error, invalid token"); // outputs if the token is invalid.
 		}
 
 		closeIO();
