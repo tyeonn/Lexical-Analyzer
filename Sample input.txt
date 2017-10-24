@@ -1,0 +1,6 @@
+float test (int a1, int a2, int a3, float x1, float x2, float x_3) =
+    if (< a1 a2) then (+ +123 -76)    
+    else if (and (<= x1 x_3) (> a3 a1)) then (- (/ 7. .78) (* +54. -.123))
+    else if (or (< x1 x_3) (>= a3 a1)) then (- (/ 87.54 .5E6) (* 7.e15 -87.54e-23))
+    else if (not (= x1 x_3)) then (+ (/ 87.54e-9 .5E+6) (* -7.E-12 +87.101e23))
+    else (+ (/ -87.54e-9 +.5E+6) (* -7. +87.e23))
